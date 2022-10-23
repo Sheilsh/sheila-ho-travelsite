@@ -17,7 +17,7 @@
             </a>
             <ul class="nav__links">
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a class="nav__home--active" href="./index.html">Home</a>
                 </li>
                 <li>
                     <a href="./pages/hawaii.html">Hawaii</a>
@@ -33,33 +33,37 @@
     </header>
     <!-- main content section-->
     <main>
-        <!-- header or div semantics? -->
-        <!-- hero section -->
-        <div class="hero">
-            <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
-            <p class="hero__content">Don't let your dreams be just dreams.Experience the world by booking a vacation with us now.</p>
-            <button class="hero__button">Get started</button>
-            <img class="hero__img" src="./assets/images/hero.png" alt="hero plane background">
-        </div>
-        <!-- recommendations card section -->
-        <section class="cardbox">
-            <h2 class="cardbox__title">Recommendations</h2>
-            <div class="card">
+    <!-- header or div semantics? -->
+    <!-- hero section -->
+        <header>
+            <section class="hero">
+                <div>
+                    <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
+                    <p class="hero__content">Don't let your dreams be just dreams.Experience the world by booking a vacation with us now.</p>
+                    <button class="hero__button">Get started</button>
+                </div>
+                <img class="hero__img" src="./assets/images/hero.png" alt="hero plane background">
+            </section>
+        </header>
+    <!-- recommendations card section -->
+        <h2 class="cardbox__title--index">Recommendations</h2>
+        <section class="cardbox cardbox--home">
+            <div class="card card__hawaii">
                 <h3 class="card__title index-card">Hawaii</h3>
                 <a class="card__link" href="./pages/hawaii.html">
-                    <img class="card__img" src="./assets/images/hawaii.jpg" alt="hawaii img">
+                    <!-- <img class="card__img" src="./assets/images/hawaii.jpg" alt="hawaii img"> -->
                 </a>
             </div>
-            <div class="card">
+            <div class="card card__iceland">
                 <h3 class="card__title index-card">Iceland</h3>
                 <a class="card__link" href="./pages/iceland.html">
-                    <img class="card__img" src="./assets/images/iceland.jpg" alt="iceland img">
+                    <!-- <img class="card__img" src="./assets/images/iceland.jpg" alt="iceland img"> -->
                 </a>
             </div>
-            <div class="card">
+            <div class="card card__greece">
                 <h3 class="card__title index-card">Greece</h3>
                 <a class="card__link" href="./pages/greece.html">
-                    <img class="card__link" src="./assets/images/greece.jpg" alt="greece img">
+                    <!-- <img class="card__link" src="./assets/images/greece.jpg" alt="greece img"> -->
                 </a>
             </div>
         </section>
@@ -73,26 +77,30 @@
         </div>
         <div>
             <h3 class="footer__header">Hours</h3>
-            <p class="footer__subtitle">Monday - Friday</p>
-            <p class="footer__info">9:00 AM - 5:00 PM</p>
-            <p class="footer__subtitle">Saturday</p>
-            <p class="footer__info">10:00 AM - 4:00 PM</p>
-            <p class="footer__subtitle">Sunday 
-                <span class="footer__info">Closed</span>
-            </p>
+            <div class="footer__hours">
+                <p class="footer__subtitle">Monday - Friday</p>
+                <p class="footer__info">9:00 AM - 5:00 PM</p>
+                <p class="footer__subtitle">Saturday</p>
+                <p class="footer__info">10:00 AM - 4:00 PM</p>
+                <p class="footer__subtitle">Sunday 
+                    <span class="footer__info">Closed</span>
+                </p>
             <!-- testing out if it should be in a span or seperate paragraphs -->
+            </div>
         </div>
         <div>
             <h3 class="footer__header">Social</h3>
-            <a href="https://instagram.com">
-                <img class="footer__icon" src="./assets/images/icon-instagram.png" alt="instagram">
-            </a>
-            <a href="https://facebook.com">
-                <img class="footer__icon" src="./assets/images/icon-facebook.png" alt="facebook">
-            </a>
-            <a>
-                <img class="footer__icon" src="./assets/images/icon-twitter.png" alt="twitter">
-            </a>
+            <div class="footer__social">
+                <a href="https://instagram.com">
+                    <img class="footer__icon" src="./assets/images/icon-instagram.png" alt="instagram">
+                </a>
+                <a href="https://facebook.com">
+                    <img class="footer__icon facebook" src="./assets/images/icon-facebook.png" alt="facebook">
+                </a>
+                <a>
+                    <img class="footer__icon" src="./assets/images/icon-twitter.png" alt="twitter">
+                </a>
+            </div>
         </div>
     </footer>
 </body>

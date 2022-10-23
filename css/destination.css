@@ -1,0 +1,33 @@
+body {
+    color: #335576;
+}
+
+.cardbox--hawaii {
+    background-image: url(../assets/images/hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 705px;
+    max-height: 705px;
+    display:flex;
+    flex-direction: column;
+}
+
+.cardbox--iceland {
+    background-image: url(../assets/images/iceland.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1280px;
+    max-height: 705px;
+}
+
+.cardbox--greece {
+    background-image: url(../assets/images/greece.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1280px;
+    max-height: 705px;
+}
+
+.cardbox__header {
+    color: white;
+}

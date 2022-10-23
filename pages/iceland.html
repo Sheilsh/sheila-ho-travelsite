@@ -32,37 +32,38 @@
         </nav>
     </header>
     <!-- main content section -->
-    <main>
-        <h1>Iceland</h1>
-        <img src="../assets/images/iceland.jpg" alt=" hero iceland img">
-        <section>
-            <h3>Friday</h3>
-            <ul>
+    <section class="cardbox--iceland">
+        <h1 class="cardbox__header">Iceland</h1>
+        <!-- <img src="../assets/images/iceland.jpg" alt="hero iceland img"> -->
+        <!-- ^^ background img on css -->
+        <div class="card">
+            <h3 class="card__title">Friday</h3>
+            <ul class="card__content">
                 <li>Breakfast</li>
                 <li>Lunch</li>
                 <li>Dinner</li>
                 <li>Hiking</li>
             </ul>
-        </section>
-        <section>
-            <h3>Saturday</h3>
-            <ul>
+        </div>
+        <div class="card">
+            <h3 class="card__title">Saturday</h3>
+            <ul class="card__content">
                 <li>Breakfast</li>
                 <li>Lunch</li>
                 <li>Dinner</li>
                 <li>Hiking</li>
             </ul>
-        </section>
-        <section>
-            <h3>Sunday</h3>
-            <ul>
+        </div>
+        <div class="card">
+            <h3 class="card__title">Sunday</h3>
+            <ul class="card__content">
                 <li>Breakfast</li>
                 <li>Lunch</li>
                 <li>Dinner</li>
                 <li>Hiking</li>
             </ul>
-        </section>
-    </main>
+        </div>
+    </section>
     <!-- footer content -->
     <footer class="footer">
         <div>
@@ -72,26 +73,30 @@
         </div>
         <div>
             <h3 class="footer__header">Hours</h3>
-            <p class="footer__subtitle">Monday - Friday</p>
-            <p class="footer__info">9:00 AM - 5:00 PM</p>
-            <p class="footer__subtitle">Saturday</p>
-            <p class="footer__info">10:00 AM - 4:00 PM</p>
-            <p class="footer__subtitle">Sunday 
-                <span class="footer__info">Closed</span>
-            </p>
+            <div class="footer__hours">
+                <p class="footer__subtitle">Monday - Friday</p>
+                <p class="footer__info">9:00 AM - 5:00 PM</p>
+                <p class="footer__subtitle">Saturday</p>
+                <p class="footer__info">10:00 AM - 4:00 PM</p>
+                <p class="footer__subtitle">Sunday 
+                    <span class="footer__info">Closed</span>
+                </p>
             <!-- testing out if it should be in a span or seperate paragraphs -->
+            </div>
         </div>
         <div>
             <h3 class="footer__header">Social</h3>
-            <a href="https://instagram.com">
-                <img class="footer__icon" src="../assets/images/icon-instagram.png" alt="instagram">
-            </a>
-            <a href="https://facebook.com">
-                <img class="footer__icon" src="../assets/images/icon-facebook.png" alt="facebook">
-            </a>
-            <a>
-                <img class="footer__icon" src="../assets/images/icon-twitter.png" alt="twitter">
-            </a>
+            <div class="footer__social">
+                <a href="https://instagram.com">
+                    <img class="footer__icon" src="../assets/images/icon-instagram.png" alt="instagram">
+                </a>
+                <a href="https://facebook.com">
+                    <img class="footer__icon facebook" src="../assets/images/icon-facebook.png" alt="facebook">
+                </a>
+                <a>
+                    <img class="footer__icon" src="../assets/images/icon-twitter.png" alt="twitter">
+                </a>
+            </div>
         </div>
     </footer>
 </body>
