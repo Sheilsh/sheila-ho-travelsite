@@ -41,7 +41,7 @@ body {
     margin: 0 9rem;
 }
 
-.destination__card {
+/* .destination__card {
     min-width: 295px;
     max-width: 300px;
     min-height: 442px;
@@ -51,6 +51,12 @@ body {
     background-color: white;
     text-align: center;
     display: flex;
+    flex-direction: column;
+} */
+
+.destination__card {
+    background-color: white;
+    text-align: center;
     flex-direction: column;
 }
 
