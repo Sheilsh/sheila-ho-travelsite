@@ -2,17 +2,82 @@ body {
     color: #335576;
 }
 
-.cardbox--hawaii {
+/* .nav__item--active:hover, .nav__item--active:focus, .nav__item--active:active{
+    margin-top: 2rem;
+    border-bottom: 4px solid #DB7A4E;
+    width: 5px;
+} */
+
+.nav__item--active {
+    margin-top: 1rem;
+    border-bottom: 4px solid #DB7A4E;
+    width: 5px;
+}
+
+.destination--hawaii {
     background-image: url(../assets/images/hawaii.jpg);
     background-size: cover;
     background-position: center;
     min-height: 705px;
     max-height: 705px;
-    display:flex;
+    /* display:flex;
+    flex-direction: column; */
+}
+
+.destination {
+    display: flex;
     flex-direction: column;
 }
 
-.cardbox--iceland {
+.destination__title {
+    font-size: 5rem;
+    color: white;
+    margin: 4rem 0 2rem 4rem;
+}
+
+.destination__box {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 9rem;
+}
+
+.destination__card {
+    min-width: 295px;
+    max-width: 300px;
+    min-height: 442px;
+    max-height: 410px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination__itin {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination__day {
+    border-bottom: 2px solid #335576;
+    font-size: 1.3rem;
+    margin: 1rem 1.5rem 0 1.5rem;
+
+}
+
+.destination__list {
+    background-color: #FEFAF5;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem 1.5rem;
+}
+
+
+/* .cardbox--iceland {
     background-image: url(../assets/images/iceland.jpg);
     background-size: cover;
     background-position: center;
@@ -26,8 +91,5 @@ body {
     background-position: center;
     max-width: 1280px;
     max-height: 705px;
-}
+} */
 
-.cardbox__header {
-    color: white;
-}

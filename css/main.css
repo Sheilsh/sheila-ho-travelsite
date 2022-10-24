@@ -4,7 +4,14 @@ body {
 
 /* nav under line  */
 
-.nav__home--active:hover, .nav__home--active:focus, .nav__home--active:active{
+/* .nav__item--active:hover, .nav__item--active:focus, .nav__item--active:active{
+    margin-top: 2rem;
+    border-bottom: 4px solid #DB7A4E;
+    width: 5px;
+} */
+
+.nav__item--active {
+    margin-top: 1rem;
     border-bottom: 4px solid #DB7A4E;
     width: 5px;
 }
@@ -16,7 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .hero__title {
@@ -42,32 +49,65 @@ body {
     max-width: 30%;
 }
 
-/* card content  */
-
-.cardbox--home {
-    color:white;
+/* content box index page */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em 5rem 5rem 5rem;
 }
 
-.index-card {
-    padding-right: 2rem;;
+.card__content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 3rem;
 }
 
-.cardbox__title--index {
-    padding: 1rem 5rem;
+.card__box {
+    min-width: 295px;
+    max-width: 300px;
+    min-height: 442px;
+    max-height: 410px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 20%);
+    display: flex;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.card__box--content {
+    text-decoration: none;
+    color: white;
+}
+
+.card__subheader {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
     margin: 1rem;
 }
 
-.card__hawaii {
+
+.card__box--hawaii {
     background-image: url("../assets/images/hawaii.jpg");
     background-size: cover;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.card__iceland {
+.card__box--iceland {
     background-image: url("../assets/images/iceland.jpg");
     background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.card__greece {
+.card__box--greece {
     background-image: url("../assets/images/greece.jpg");
     background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

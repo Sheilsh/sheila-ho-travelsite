@@ -12,32 +12,32 @@
     <!-- header navagation -->
     <header>
         <nav class="nav">
-            <a href="./index.html">
-                <h2 class="nav__header">Travel Site</h2>
+            <a class="nav__header" href="./index.html">
+                <h2>Travel Site</h2>
             </a>
             <ul class="nav__links">
                 <li>
-                    <a class="nav__home--active" href="./index.html">Home</a>
+                    <a class="nav__item nav__item--active" href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./pages/hawaii.html">Hawaii</a>
+                    <a class="nav__item" href="./pages/hawaii.html">Hawaii</a>
                 </li>
                 <li>
-                    <a href="./pages/iceland.html">Iceland</a>
+                    <a class="nav__item" href="./pages/iceland.html">Iceland</a>
                 </li>
                 <li>
-                    <a href="./pages/greece.html">Greece</a>
+                    <a class="nav__item" href="./pages/greece.html">Greece</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- main content section-->
     <main>
-    <!-- header or div semantics? -->
     <!-- hero section -->
+     <!-- header or div semantics? -->
         <header>
             <section class="hero">
-                <div>
+                <div class="hero__box">
                     <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
                     <p class="hero__content">Don't let your dreams be just dreams.Experience the world by booking a vacation with us now.</p>
                     <button class="hero__button">Get started</button>
@@ -46,24 +46,17 @@
             </section>
         </header>
     <!-- recommendations card section -->
-        <h2 class="cardbox__title--index">Recommendations</h2>
-        <section class="cardbox cardbox--home">
-            <div class="card card__hawaii">
-                <h3 class="card__title index-card">Hawaii</h3>
-                <a class="card__link" href="./pages/hawaii.html">
-                    <!-- <img class="card__img" src="./assets/images/hawaii.jpg" alt="hawaii img"> -->
+        <section class="card">
+            <h2 class="card__title">Recommendations</h2>
+            <div class="card__content">
+                <a class="card__box card__box--content card__box--hawaii" href="./pages/hawaii.html">
+                    <h3 class="card__subheader">Hawaii</h3>
                 </a>
-            </div>
-            <div class="card card__iceland">
-                <h3 class="card__title index-card">Iceland</h3>
-                <a class="card__link" href="./pages/iceland.html">
-                    <!-- <img class="card__img" src="./assets/images/iceland.jpg" alt="iceland img"> -->
+                <a class="card__box card__box--content card__box--iceland" href="./pages/iceland.html">
+                    <h3 class="card__subheader">Iceland</h3>
                 </a>
-            </div>
-            <div class="card card__greece">
-                <h3 class="card__title index-card">Greece</h3>
-                <a class="card__link" href="./pages/greece.html">
-                    <!-- <img class="card__link" src="./assets/images/greece.jpg" alt="greece img"> -->
+                <a class="card__box card__box--content card__box--greece" href="./pages/greece.html">
+                    <h3 class="card__subheader">Greece</h3>
                 </a>
             </div>
         </section>
@@ -76,15 +69,17 @@
             <p class="footer__info">info@travelsite.com</p>
         </div>
         <div>
-            <h3 class="footer__header">Hours</h3>
+            <h3 class="footer__header footer__header--hours">Hours</h3>
             <div class="footer__hours">
-                <p class="footer__subtitle">Monday - Friday</p>
-                <p class="footer__info">9:00 AM - 5:00 PM</p>
-                <p class="footer__subtitle">Saturday</p>
-                <p class="footer__info">10:00 AM - 4:00 PM</p>
-                <p class="footer__subtitle">Sunday 
-                    <span class="footer__info">Closed</span>
-                </p>
+                <ul class="footer__subtitle">Monday - Friday
+                    <li class="footer__info">9:00 AM - 5:00 PM</li>
+                </ul>
+                <ul class="footer__subtitle">Saturday
+                    <li class="footer__info">10:00 AM - 4:00 PM</li>
+                </ul>
+                <ul class="footer__subtitle">Sunday
+                    <li class="footer__info">Closed</li>
+                </ul> 
             <!-- testing out if it should be in a span or seperate paragraphs -->
             </div>
         </div>
