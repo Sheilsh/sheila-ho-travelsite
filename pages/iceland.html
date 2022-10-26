@@ -10,60 +10,53 @@
 </head>
 <body>
     <!-- header navagation -->
-   <header>
+    <header>
         <nav class="nav">
-            <a href="../index.html">
-                <h2 class="nav__header">Travel Site</h2>
-            </a>
+            <a class="nav__header" href="../index.html">Travel Site</a>
             <ul class="nav__links">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./hawaii.html">Hawaii</a>
-                </li>
-                <li>
-                    <a href="./iceland.html">Iceland</a>
-                </li>
-                <li>
-                    <a href="./greece.html">Greece</a>
-                </li>
+                <li><a class="nav__item" href="../index.html">Home</a></li>
+                <li><a class="nav__item nav__item--active" href="../pages/hawaii.html">Hawaii</a></li>
+                <li><a class="nav__item" href="./iceland.html">Iceland</a></li>
+                <li><a class="nav__item" href="./greece.html">Greece</a></li>
             </ul>
         </nav>
     </header>
     <!-- main content section -->
-    <section class="cardbox--iceland">
-        <h1 class="cardbox__header">Iceland</h1>
-        <!-- <img src="../assets/images/iceland.jpg" alt="hero iceland img"> -->
-        <!-- ^^ background img on css -->
-        <div class="card">
-            <h3 class="card__title">Friday</h3>
-            <ul class="card__content">
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Hiking</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3 class="card__title">Saturday</h3>
-            <ul class="card__content">
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Hiking</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3 class="card__title">Sunday</h3>
-            <ul class="card__content">
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Hiking</li>
-            </ul>
-        </div>
-    </section>
+    <main>
+        <section class="destination destination--iceland">
+            <h1 class="destination__title">Iceland</h1>
+            <!-- ^^ background img on css -->
+            <div class="destination__box">
+                <div class="card__box destination__card">
+                    <h3 class="destination__day">Friday</h3>
+                    <ul class="destination__itin">
+                        <li class="destination__list">Breakfast</li>
+                        <li class="destination__list">Lunch</li>
+                        <li class="destination__list">Dinner</li>
+                        <li class="destination__list">Hiking</li>
+                    </ul>
+                </div>
+                <div class=" card__box destination__card">
+                    <h3 class="destination__day">Saturday</h3>
+                    <ul class="destination__itin">
+                        <li class="destination__list">Breakfast</li>
+                        <li class="destination__list">Lunch</li>
+                        <li class="destination__list">Dinner</li>
+                        <li class="destination__list">Hiking</li>
+                    </ul>
+                </div>
+                <div class="card__box destination__card">
+                    <h3 class="destination__day">Sunday</h3>
+                    <ul class="destination__itin">
+                        <li class="destination__list">Breakfast</li>
+                        <li class="destination__list">Lunch</li>
+                        <li class="destination__list">Dinner</li>
+                        <li class="destination__list">Hiking</li>
+                    </ul>
+                </div>
+            </div>
+        </setion>
+    </main>
     <!-- footer content -->
     <footer class="footer">
         <div>
@@ -72,15 +65,17 @@
             <p class="footer__info">info@travelsite.com</p>
         </div>
         <div>
-            <h3 class="footer__header">Hours</h3>
+            <h3 class="footer__header footer__header--hours">Hours</h3>
             <div class="footer__hours">
-                <p class="footer__subtitle">Monday - Friday</p>
-                <p class="footer__info">9:00 AM - 5:00 PM</p>
-                <p class="footer__subtitle">Saturday</p>
-                <p class="footer__info">10:00 AM - 4:00 PM</p>
-                <p class="footer__subtitle">Sunday 
-                    <span class="footer__info">Closed</span>
-                </p>
+                <ul class="footer__subtitle">Monday - Friday
+                    <li class="footer__info">9:00 AM - 5:00 PM</li>
+                </ul>
+                <ul class="footer__subtitle">Saturday
+                    <li class="footer__info">10:00 AM - 4:00 PM</li>
+                </ul>
+                <ul class="footer__subtitle">Sunday
+                    <li class="footer__info">Closed</li>
+                </ul> 
             <!-- testing out if it should be in a span or seperate paragraphs -->
             </div>
         </div>

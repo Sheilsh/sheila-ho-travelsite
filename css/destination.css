@@ -2,35 +2,29 @@ body {
     color: #335576;
 }
 
-/* .nav__item--active:hover, .nav__item--active:focus, .nav__item--active:active{
-    margin-top: 2rem;
-    border-bottom: 4px solid #DB7A4E;
-    width: 5px;
-} */
-
-.nav__item--active {
-    margin-top: 1rem;
-    border-bottom: 4px solid #DB7A4E;
-    width: 5px;
-}
-
 .destination--hawaii {
     background-image: url(../assets/images/hawaii.jpg);
+}
+
+.destination--iceland {
+    background-image: url(../assets/images/iceland.jpg);
+}
+
+.destination--greece {
+    background-image: url(../assets/images/greece.jpg);
+}
+
+.destination {
     background-size: cover;
     background-position: center;
     min-height: 705px;
     max-height: 705px;
-    /* display:flex;
-    flex-direction: column; */
-}
-
-.destination {
     display: flex;
     flex-direction: column;
 }
 
 .destination__title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: white;
     margin: 4rem 0 2rem 4rem;
 }
@@ -83,19 +77,4 @@ body {
 }
 
 
-/* .cardbox--iceland {
-    background-image: url(../assets/images/iceland.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 1280px;
-    max-height: 705px;
-}
-
-.cardbox--greece {
-    background-image: url(../assets/images/greece.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 1280px;
-    max-height: 705px;
-} */
 
