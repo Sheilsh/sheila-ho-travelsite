@@ -1,4 +1,4 @@
-/* @media (min-width: 786px) and (max-width: 1280px) { */
+/* @media (max-width: 300px) and (max-width: 1280px) { */
     
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -14,6 +14,8 @@
         padding: 0 6rem;
         margin: 0;
         background-color: #FFFFFF;
+        /* position: fixed;
+        width: 100vw; */
     }
 
     .nav__header {
@@ -38,8 +40,7 @@
 
     /* nav under line  */
 
-    .nav__item--active:hover, 
-    .nav__item--active:focus, 
+    .nav__item--active:hover,  
     .nav__item--active:active {
         margin-top: 2rem;
         border-bottom: 4px solid #DB7A4E;
@@ -53,6 +54,8 @@
         max-width: 300px;
         min-height: 415px;
         max-height: 410px;
+        /* width: 28%;
+        height: 28rem; */
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 20%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 20%);
