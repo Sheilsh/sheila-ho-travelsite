@@ -23,10 +23,10 @@ body {
 .destination {
     background-size: cover;
     background-position: center;
-    min-height: 705px;
-    max-height: 705px;
+    height: 83vh;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
 }
 
 .destination__title {
@@ -49,8 +49,6 @@ body {
 
 .destination__itin {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
 }
