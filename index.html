@@ -10,24 +10,23 @@
 </head>
 <body>
     <!-- header navagation -->
-    <header>
+    <header class="header__nav">
+        <a class="header__logo" href="./index.html">Travel Site</a>
         <nav class="nav">
-            <a class="nav__header" href="./index.html">Travel Site</a>
             <ul class="nav__links">
                 <li><a class="nav__item nav__item--active" href="./index.html">Home</a></li>
-                <li><a class="nav__item" href="./pages/hawaii.html">Hawaii</a></li>
-                <li><a class="nav__item" href="./pages/iceland.html">Iceland</a></li>
-                <li><a class="nav__item" href="./pages/greece.html">Greece</a></li>
+                <li><a class="nav__item" href="../pages/hawaii.html">Hawaii</a></li>
+                <li><a class="nav__item" href="../pages/iceland.html">Iceland</a></li>
+                <li><a class="nav__item" href="../pages/greece.html">Greece</a></li>
             </ul>
         </nav>
     </header>
     <!-- main content section-->
     <main>
     <!-- hero section -->
-     <!-- header or div semantics? -->
-        <header>
-            <section class="hero">
-                <div class="hero__box">
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__text-box">
                     <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
                     <p class="hero__content">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
                     <a href="./pages/getstarted.html">
@@ -37,21 +36,23 @@
                 <div class="hero__img--container">
                     <img class="hero__img" src="./assets/images/hero.png" alt="hero plane background">
                 </div>
-            </section>
-        </header>
+            </div>
+        </section>
     <!-- recommendations card section -->
         <section class="card">
             <h2 class="card__title">Recommendations</h2>
-            <div class="card__content">
-                <a class="card__box card__box--content card__box--hawaii" href="./pages/hawaii.html">
-                    <h3 class="card__subheader">Hawaii</h3>
-                </a>
-                <a class="card__box card__box--content card__box--iceland" href="./pages/iceland.html">
-                    <h3 class="card__subheader">Iceland</h3>
-                </a>
-                <a class="card__box card__box--content card__box--greece" href="./pages/greece.html">
-                    <h3 class="card__subheader">Greece</h3>
-                </a>
+            <div class="card__container">
+                <div class="card__content">
+                    <a class="card__box card__box--hawaii" href="./pages/hawaii.html">
+                        <h3 class="card__subheader">Hawaii</h3>
+                    </a>
+                    <a class="card__box card__box--iceland" href="./pages/iceland.html">
+                        <h3 class="card__subheader">Iceland</h3>
+                    </a>
+                    <a class="card__box card__box--greece" href="./pages/greece.html">
+                        <h3 class="card__subheader">Greece</h3>
+                    </a>
+                </div>
             </div>
         </section>
     </main>

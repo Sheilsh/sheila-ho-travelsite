@@ -23,26 +23,38 @@ body {
 .destination {
     background-size: cover;
     background-position: center;
-    height: 83vh;
+    min-height: 100vh;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .destination__title {
     font-size: 4.5rem;
     color: white;
-    margin: 4rem 0 2rem 4rem;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    /* padding: 0 4rem;
+    margin: 2rem 2rem 0 3rem; */
+}
+
+.destination__container {
+    margin-bottom: 3rem;
 }
 
 .destination__box {
     display: flex;
-    justify-content: space-around;
-    margin: 0 9rem;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
 }
 
 .destination__card {
+    width: 23vw;
+    height: 55vh;
     background-color: white;
+    border-radius: 5px;
+    display: flex;
     text-align: center;
     flex-direction: column;
 }
@@ -62,10 +74,7 @@ body {
 
 .destination__list {
     background-color: #FEFAF5;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
     margin: 1rem 1.5rem;
 }
-
-
-
