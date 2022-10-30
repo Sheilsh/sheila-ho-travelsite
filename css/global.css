@@ -78,9 +78,6 @@ body {
 .footer {
     background-color: #FEFAF5;
     position: sticky;
-    /* display: flex;
-    justify-content: space-evenly;
-    padding: 2rem; */
 }
 
 .footer__container {
@@ -91,7 +88,6 @@ body {
     padding: 2rem;
     margin: 0 auto;
 }
-
 
 .footer__header {
     font-size: 1.4rem;
@@ -116,7 +112,6 @@ address {
 .footer__info {
     color: #335576;
     font-size: 12px;
-    /* margin: 0.5rem 0 1rem 0; */
 }
 
 .footer__info--email {
