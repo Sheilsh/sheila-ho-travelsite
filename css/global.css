@@ -86,20 +86,20 @@ body {
 .footer__container {
     display: flex;
     justify-content: space-around;
-    gap: 4rem;
     width: 100%;
     max-width: 75rem;
     padding: 2rem;
     margin: 0 auto;
 }
 
-address {
-    font-style: normal;
-}
 
 .footer__header {
     font-size: 1.4rem;
     margin-bottom: 2rem;
+}
+
+address {
+    font-style: normal;
 }
 
 .footer a {
@@ -108,24 +108,27 @@ address {
 
 .footer__subtitle {
     color:  #DB7A4E;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
-    margin-right: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer__info {
     color: #335576;
     font-size: 12px;
-    list-style: none;
-    margin: 0.5rem 0 1rem 0;
+    /* margin: 0.5rem 0 1rem 0; */
 }
 
-/* footer hours */
+.footer__info--email {
+    margin-top: 0.3rem;
+}
 
-.footer__hours {
-    list-style: none;
+
+.footer__hourbox{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 /* footer social icons */
@@ -134,6 +137,7 @@ address {
     display: flex;
     align-items: flex-end;
     gap: 1.5rem;
+    margin-top: 3rem;
 }
 
 .footer__icon {
