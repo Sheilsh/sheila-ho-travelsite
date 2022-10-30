@@ -2,12 +2,6 @@ body {
     color: #335576;
 }
 
-.nav__item--active {
-    margin-top: 1rem;
-    border-bottom: 4px solid #DB7A4E;
-    width: 5px;
-}
-
 .destination--hawaii {
     background-image: url(../assets/images/hawaii.jpg);
 }
@@ -25,17 +19,14 @@ body {
     background-position: center;
     min-height: 100vh;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .destination__title {
     font-size: 4.5rem;
     color: white;
-    padding: 1rem 2rem;
-    margin: 0 2rem;
-    /* padding: 0 4rem;
-    margin: 2rem 2rem 0 3rem; */
+    max-width: 75rem;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
 .destination__container {
@@ -44,14 +35,15 @@ body {
 
 .destination__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4rem;
     max-width: 80%;
     margin: auto;
 }
 
 .destination__card {
-    width: 23vw;
-    height: 55vh;
+    min-width: 19rem;
+    min-height: 28rem;
     background-color: white;
     border-radius: 5px;
     display: flex;

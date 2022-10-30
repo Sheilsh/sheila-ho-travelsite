@@ -6,68 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/startedform.css">
     <title>Get Started</title>
 </head>
 <body>
     <!-- header navagation -->
     <header class="header__nav">
-        <a class="header__logo" href="../index.html">Travel Site</a>
         <nav class="nav">
             <ul class="nav__links">
-                <li><a class="nav__item nav__item--active" href="./index.html">Home</a></li>
-                <li><a class="nav__item" href="./pages/hawaii.html">Hawaii</a></li>
-                <li><a class="nav__item" href="./pages/iceland.html">Iceland</a></li>
-                <li><a class="nav__item" href="./pages/greece.html">Greece</a></li>
+                <li><a class="nav__logo" href="../index.html">Travel Site</a></li>
+                <li><a class="nav__item nav__item--active" href="../index.html">Home</a></li>
+                <li><a class="nav__item" href="./hawaii.html">Hawaii</a></li>
+                <li><a class="nav__item" href="./iceland.html">Iceland</a></li>
+                <li><a class="nav__item" href="./greece.html">Greece</a></li>
             </ul>
         </nav>
     </header>
-    <!-- main content section-->
+    <!-- form content section-->
     <main>
-        <section>
-            
-        </section>
+        <form action="/getstarted" class="form">
+            <h1>Getting Started</h1>
+            <p>Please fill out this form for more information</p>
+            <div class="inputBox">
+                <input type="text" name="fullname" required>
+                <label class="form__info" for="fullname">Full Name</label>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" required>
+                <label class="form__info" for="email">Email</label>
+                <i></i>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
 
-
-
-
+        <!-- <img class="form__img--shrink" src="../assets/images/world-travel-image.jpeg" alt="travel img from google"> -->
     </main>
     <!-- footer content -->
     <footer class="footer">
-        <div>
-            <h3 class="footer__header">Contact</h3>
-            <p class="footer__subtitle">Email</p>
-            <p class="footer__info">info@travelsite.com</p>
-        </div>
-        <div>
-            <h3 class="footer__header footer__header--hours">Hours</h3>
-            <div class="footer__hours">
-                <ul class="footer__subtitle">Monday - Friday
-                    <li class="footer__info">9:00 AM - 5:00 PM</li>
-                </ul>
-                <ul class="footer__subtitle">Saturday
-                    <li class="footer__info">10:00 AM - 4:00 PM</li>
-                </ul>
-                <ul class="footer__subtitle">Sunday
-                    <li class="footer__info">Closed</li>
-                </ul> 
-            <!-- testing out if it should be in a span or seperate paragraphs -->
+        <div class="footer__container">
+            <div>
+                <h3 class="footer__header">Contact</h3>
+                <p class="footer__subtitle">Email</p>
+                <address class="footer__info">info@travelsite.com</address>
             </div>
-        </div>
-        <div>
-            <h3 class="footer__header">Social</h3>
-            <div class="footer__social">
-                <a href="https://instagram.com">
-                    <img class="footer__icon" src="../assets/images/icon-instagram.png" alt="instagram">
-                </a>
-                <a href="https://facebook.com">
-                    <img class="footer__icon facebook" src="../assets/images/icon-facebook.png" alt="facebook">
-                </a>
-                <a>
-                    <img class="footer__icon" src="../assets/images/icon-twitter.png" alt="twitter">
-                </a>
+            <div>
+                <h3 class="footer__header footer__header--hours">Hours</h3>
+                <div class="footer__hours">
+                    <ul class="footer__subtitle">Monday - Friday
+                        <li class="footer__info">9:00 AM - 5:00 PM</li>
+                    </ul>
+                    <ul class="footer__subtitle">Saturday
+                        <li class="footer__info">10:00 AM - 4:00 PM</li>
+                    </ul>
+                    <ul class="footer__subtitle">Sunday
+                        <li class="footer__info">Closed</li>
+                    </ul> 
+                </div>
+            </div>
+            <div>
+                <h3 class="footer__header">Social</h3>
+                <div class="footer__social">
+                    <a href="https://instagram.com">
+                        <img class="footer__icon" src="../assets/images/icon-instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://facebook.com">
+                        <img class="footer__icon facebook" src="../assets/images/icon-facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img class="footer__icon" src="../assets/images/icon-twitter.png" alt="twitter">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>

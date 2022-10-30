@@ -11,9 +11,9 @@
 <body>
     <!-- header navagation -->
     <header class="header__nav">
-        <a class="header__logo" href="./index.html">Travel Site</a>
         <nav class="nav">
             <ul class="nav__links">
+                <li><a class="nav__logo" href="./index.html">Travel Site</a></li>
                 <li><a class="nav__item nav__item--active" href="./index.html">Home</a></li>
                 <li><a class="nav__item" href="../pages/hawaii.html">Hawaii</a></li>
                 <li><a class="nav__item" href="../pages/iceland.html">Iceland</a></li>
@@ -29,9 +29,7 @@
                 <div class="hero__text-box">
                     <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
                     <p class="hero__content">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-                    <a href="./pages/getstarted.html">
-                        <button class="hero__button">Get started</button>
-                    </a>
+                    <a class="hero__button" href="./pages/getstarted.html">Get started</a>
                 </div>
                 <div class="hero__img--container">
                     <img class="hero__img" src="./assets/images/hero.png" alt="hero plane background">
@@ -39,8 +37,8 @@
             </div>
         </section>
     <!-- recommendations card section -->
+        <h2 class="card__title">Recommendations</h2>
         <section class="card">
-            <h2 class="card__title">Recommendations</h2>
             <div class="card__container">
                 <div class="card__content">
                     <a class="card__box card__box--hawaii" href="./pages/hawaii.html">
@@ -58,38 +56,39 @@
     </main>
     <!-- footer content -->
     <footer class="footer">
-        <div>
-            <h3 class="footer__header">Contact</h3>
-            <p class="footer__subtitle">Email</p>
-            <p class="footer__info">info@travelsite.com</p>
-        </div>
-        <div>
-            <h3 class="footer__header footer__header--hours">Hours</h3>
-            <div class="footer__hours">
-                <ul class="footer__subtitle">Monday - Friday
-                    <li class="footer__info">9:00 AM - 5:00 PM</li>
-                </ul>
-                <ul class="footer__subtitle">Saturday
-                    <li class="footer__info">10:00 AM - 4:00 PM</li>
-                </ul>
-                <ul class="footer__subtitle">Sunday
-                    <li class="footer__info">Closed</li>
-                </ul> 
-            <!-- testing out if it should be in a span or seperate paragraphs -->
+        <div class="footer__container">
+            <div>
+                <h3 class="footer__header">Contact</h3>
+                <p class="footer__subtitle">Email</p>
+                <address class="footer__info">info@travelsite.com</address>
             </div>
-        </div>
-        <div>
-            <h3 class="footer__header">Social</h3>
-            <div class="footer__social">
-                <a href="https://instagram.com">
-                    <img class="footer__icon" src="./assets/images/icon-instagram.png" alt="instagram">
-                </a>
-                <a href="https://facebook.com">
-                    <img class="footer__icon facebook" src="./assets/images/icon-facebook.png" alt="facebook">
-                </a>
-                <a>
-                    <img class="footer__icon" src="./assets/images/icon-twitter.png" alt="twitter">
-                </a>
+            <div>
+                <h3 class="footer__header footer__header--hours">Hours</h3>
+                <div class="footer__hours">
+                    <ul class="footer__subtitle">Monday - Friday
+                        <li class="footer__info">9:00 AM - 5:00 PM</li>
+                    </ul>
+                    <ul class="footer__subtitle">Saturday
+                        <li class="footer__info">10:00 AM - 4:00 PM</li>
+                    </ul>
+                    <ul class="footer__subtitle">Sunday
+                        <li class="footer__info">Closed</li>
+                    </ul> 
+                </div>
+            </div>
+            <div>
+                <h3 class="footer__header">Social</h3>
+                <div class="footer__social">
+                    <a href="https://instagram.com">
+                        <img class="footer__icon" src="./assets/images/icon-instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://facebook.com">
+                        <img class="footer__icon facebook" src="./assets/images/icon-facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img class="footer__icon" src="./assets/images/icon-twitter.png" alt="twitter">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

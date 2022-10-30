@@ -1,0 +1,94 @@
+main {
+    background-color: #f5e9db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 84vh;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.form {
+    width: 380px;
+    height: 420px;
+    background-color: whitesmoke;
+    border: 2px solid #DB7A4E;
+    border-radius: 8px;
+    padding: 50px 40px;
+    margin: 5rem auto;
+    box-sizing: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #335576;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #335576;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ label ,
+.inputBox input:focus ~ label {
+    color:#DB7A4E;
+    transform: translateY(-34px);
+    font-size: 0.75rem;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ead9d1;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+    height: 44px;
+}
+
+.btn {
+    text-transform: uppercase;
+    width: 10rem;
+    padding: 0.5rem;
+    margin: 2rem 0;
+    border: 2px solid #DB7A4E;
+    border-radius: 20px;
+}

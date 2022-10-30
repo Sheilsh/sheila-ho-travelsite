@@ -10,7 +10,7 @@ html {
     
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -19,36 +19,30 @@ body {
 
 .header__nav {
     background-color: #FFF;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 80rem;
-    padding: 1.2rem 5rem;
-    margin: 0 auto;
     position: sticky;
     top: 0;
     z-index: 9;
-    
 }
 
-.header__logo {
+.nav__links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 75rem;
+    padding: 1.2rem 2rem;
+    margin: 0 auto;
+}
+
+.nav__links li:first-child {
+    margin-right: auto;
+}
+
+.nav__logo {
     text-decoration: none;
     font-weight: bold;
     color: #335576;
 }
-
-/* .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0 6rem;
-    margin-bottom: 0.5rem;
-    background-color: #FFFFFF;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9;
-} */
 
 .nav a {
     text-decoration: none;
@@ -57,11 +51,10 @@ body {
     color: #335576;
 }
 
-ul.nav__links {
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+.nav__item--active {
+    margin-top: 1rem;
+    border-bottom: 3px solid #DB7A4E;
+    width: 5px;
 }
 
 /* nav under line  */
@@ -69,7 +62,13 @@ ul.nav__links {
 .nav__item--active:hover,  
 .nav__item--active:active {
     margin-top: 2rem;
-    border-bottom: 4px solid #DB7A4E;
+    border-bottom: 3px solid #DB7A4E;
+    width: 5px;
+}
+
+.nav__item:hover {
+    margin-top: 2rem;
+    border-bottom: 3px solid #DB7A4E;
     width: 5px;
 }
 
@@ -79,9 +78,23 @@ ul.nav__links {
 .footer {
     background-color: #FEFAF5;
     position: sticky;
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
+    padding: 2rem; */
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    width: 100%;
+    max-width: 75rem;
     padding: 2rem;
+    margin: 0 auto;
+}
+
+address {
+    font-style: normal;
 }
 
 .footer__header {
@@ -97,7 +110,7 @@ ul.nav__links {
     color:  #DB7A4E;
     font-size: 12px;
     text-transform: uppercase;
-    margin-right: 1.2rem;
+    margin-right: 2rem;
 }
 
 .footer__info {
@@ -124,7 +137,6 @@ ul.nav__links {
 }
 
 .footer__icon {
-    /* min-width: 1.5rem; */
     max-width: 75%;
     max-height: 2rem;
 }

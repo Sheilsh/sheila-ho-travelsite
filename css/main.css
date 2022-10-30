@@ -2,12 +2,6 @@ body {
     color: #335576;
 }
 
-.nav__item--active {
-    margin-top: 1rem;
-    border-bottom: 4px solid #DB7A4E;
-    width: 5px;
-}
-
 /* hero section */
 
 .hero {
@@ -17,9 +11,11 @@ body {
 .hero__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 2.5rem;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
     margin: 0 auto;
+    width: 100%;
     max-width: 75rem;
 }
 
@@ -51,32 +47,36 @@ body {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.hero__button:hover, .hero__button:focus {
+    background-color: #e6a07ffa;
+    border: 2px solid #DB7A4E;
+    transition: background-color 200ms ease-in-out;
+
 }
 
 .hero__img--container {
-    max-width: 35%;
+    min-width: 25rem;
+    max-width: 35rem;
+    text-align: right;
 }
 
 .hero__img {
-    width: 100%;
+    width: 95%;
 }
 
-/* recommendation content */
+/* recommendation card content */
 
 .card__container {
-    margin: 2rem 3rem 3rem 3rem;
-    /* margin: 2rem 0 3rem 0; */
-    /* display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin: 2em 5rem 3rem 5rem; */
+    margin: 2rem 3rem 4rem 3rem;
+
 }
 
 .card__box {
-    /* width: 19rem;
-    height: 29rem; */
-    width: 23vw;
-    height: 55vh;
+    min-width: 19rem;
+    min-height: 28rem;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 20%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 20%);
@@ -92,14 +92,16 @@ body {
 
 .card__content {
     display: flex;
-    justify-content: space-between;
-    max-width: 80%;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 85%;
     margin: auto;
 }
 
 .card__title {
-    padding: 1rem 2.5rem;
-    margin: 1rem 2rem 0 2rem;
+    max-width: 75rem;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
 .card__subheader {
@@ -118,4 +120,10 @@ body {
 
 .card__box--greece {
     background-image: url("../assets/images/greece.jpg");
+}
+
+.card__box:hover,
+.card__box:focus {
+    border: 2px solid #DB7A4E;
+    transition: border 200ms ease-in-out;
 }
