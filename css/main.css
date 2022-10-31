@@ -93,7 +93,7 @@ body {
 .card__content {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     max-width: 85%;
     margin: auto;
 }
