@@ -1,6 +1,4 @@
-body {
-    color: #335576;
-}
+/* destination content  */
 
 .destination--hawaii {
     background-image: url(../assets/images/hawaii.jpg);
@@ -66,7 +64,7 @@ body {
 
 .destination__list {
     background-color: #FEFAF5;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 1rem;
     margin: 1rem 1.5rem;
 }
