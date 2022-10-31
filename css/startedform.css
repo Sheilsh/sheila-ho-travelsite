@@ -17,7 +17,7 @@ h1 {
 
 .form {
     width: 380px;
-    height: 420px;
+    height: 480px;
     background-color: whitesmoke;
     border: 2px solid #DB7A4E;
     border-radius: 8px;
@@ -92,7 +92,13 @@ h1 {
     text-transform: uppercase;
     width: 10rem;
     padding: 0.5rem;
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 0;
     border: 2px solid #DB7A4E;
     border-radius: 20px;
+}
+
+.form__message {
+    border-radius: 5px;
+    border-color: #DB7A4E;
+    margin-top: 2rem;
 }
