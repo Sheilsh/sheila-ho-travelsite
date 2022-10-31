@@ -98,6 +98,7 @@ h1 {
 }
 
 .form__message {
+    font-family: Verdana;
     border-radius: 5px;
     border-color: #DB7A4E;
     margin-top: 2rem;
