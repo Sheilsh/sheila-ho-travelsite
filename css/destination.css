@@ -34,9 +34,9 @@
 .destination__box {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     max-width: 80%;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .destination__card {
