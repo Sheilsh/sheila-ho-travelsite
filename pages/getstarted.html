@@ -27,6 +27,14 @@
         <form action="/getstarted" class="form">
             <h1>Getting Started</h1>
             <p>Please fill out this form for more information</p>
+            <div class="options">
+                <label for="trip">Destination Options:</label>
+                <select name="trip" id="trip">
+                    <option value="hawaii">Hawaii</options>
+                    <option value="iceland">Iceland</options>
+                    <option value="greece">Greece</options>
+                </select>
+            </div>
             <div class="inputBox">
                 <input type="text" name="fullname" required>
                 <label class="form__info">Full Name</label>

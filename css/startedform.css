@@ -5,6 +5,7 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 84vh;
+    color: #335576;
 }
 
 h1 {
@@ -28,6 +29,9 @@ h1 {
     align-items: center;
 }
 
+.options {
+    margin: 1rem;
+}
 
 .inputBox {
     position: relative;
