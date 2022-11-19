@@ -33,13 +33,13 @@ h1 {
     margin: 1rem;
 }
 
-.inputBox {
+.input-box {
     position: relative;
     width: 300px;
     margin-top: 35px;
 }
 
-.inputBox input {
+.input-box input {
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -52,7 +52,7 @@ h1 {
     z-index: 10;
 }
 
-.inputBox label {
+.input-box label {
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
@@ -63,14 +63,14 @@ h1 {
     transition: 0.5s;
 }
 
-.inputBox input:valid ~ label ,
-.inputBox input:focus ~ label {
+.input-box input:valid ~ label ,
+.input-box input:focus ~ label {
     color:#DB7A4E;
     transform: translateY(-34px);
     font-size: 0.75rem;
 }
 
-.inputBox i {
+.input-box i {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -83,8 +83,8 @@ h1 {
     z-index: 9;
 }
 
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i {
+.input-box input:valid ~ i,
+.input-box input:focus ~ i {
     height: 44px;
 }
 
